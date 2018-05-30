@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+<style>
+	h1{
+	
+	font-size:35px;
+	padding-bottom:25px;
+	text-align: left;
+	border-bottom:2px solid black;
+	
+	}
+	
+	#div1{display: inline-block; 
+	border: 1px solid white; 
+	padding: 5px;
+	
+	background-color:#22741C;
+	color:white;
+	text-align: center;
+	width:125px;
+	height:25px;
+	}
+	</style>
+</head>
+<body>
+	
+	<h1>회원가입</h1>
+	
+	<form action="register.do" method="post"> <!-- 메소드 생략하면 무조건 GET방식이다. -->
+		
+		
+		<div id ="div1">이름 </div><input type= "text" style="width:150px;height:18px" name="name"/> <br>
+		<div id ="div1">아이디 </div><input type="text" style="width:150px;height:18px" name="id" /> <br>
+		<div id ="div1">비밀번호 </div><input type ="password" style="width:150px;height:18px" name="password" /> <br>
+		<div id ="div1">비밀번호 확인 </div><input type ="password" style="width:150px;height:18px" name="passwordCheck" /> <br>
+		<div id ="div1">이메일</div><input type="text" style="width:150px;height:18px" name="email" />@
+		
+		<input type="text" id="interest" list="choices"placeholder="선택" style="width:120px;height:18px" >
+		
+<datalist id="choices">
+  <option value="naver.com" label="네이버"></option>
+  <option value="daum.com" label="다음"></option>
+  <option value="bu.ac.kr" label="백석대"></option>
+  <option value="nate.com" label="네이트"></option>
+  <option value="" label="기타"></option>
+</datalist><br>
+		<div id ="div1">휴대폰 번호 </div>
+		<input type= "text" style="width:50px;height:18px" name = "phone" placeholder="숫자" /> -
+		<input type="text" style="width:50px;height:18px" name="email" /> -
+		<input type="text" style="width:50px;height:18px" name="email" /> <br>
+		<div id ="div1">우편번호</div><input type= "text" style="width:30px;height:18px"name = "address" /> -
+		<input type="text" style="width:30px;height:18px" name="email" /> <br>
+		<div id ="div1">주소</div><input type= "text" style="width:350px;height:18px" name="email" /><br>
+		
+		
+		<input type="submit" value="회원 가입" />
+		</form>
+		
+		
+</body>
+</html>
